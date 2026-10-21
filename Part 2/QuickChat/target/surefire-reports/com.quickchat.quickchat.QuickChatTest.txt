@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.quickchat.quickchat.QuickChatTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 s -- in com.quickchat.quickchat.QuickChatTest
