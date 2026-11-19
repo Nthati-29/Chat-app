@@ -1,6 +1,6 @@
 # This workflow builds and tests the Java application using Maven.
 # The Maven project is located in:
-# Part 2/QuickChat/pom.xml
+# Part 3/QuickChat/pom.xml
 
 name: Java CI with Maven
 
@@ -39,7 +39,7 @@ jobs:
           cache: maven
 
           # Tell the cache where the actual pom.xml file is located.
-          cache-dependency-path: 'Part 2/QuickChat'
+          cache-dependency-path: 'Part 3/QuickChat'
 
       # Build the project and run all tests.
       #
@@ -47,5 +47,5 @@ jobs:
       # in the repository root. It is located inside:
       # Part 1/PROG5121_POE
       - name: Build and test with Maven
-        working-directory: 'Part 2/QuickChat'
+        working-directory: 'Part 3/QuickChat'
         run: mvn --batch-mode clean verify
