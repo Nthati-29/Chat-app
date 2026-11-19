@@ -595,8 +595,11 @@ public class QuickChat {
             System.out.println("Error saving message to JSON file: " + e.getMessage());
         }
     }
-
     
+     public static String printMessages() {
+        Path path = Paths.get(JSON_FILE_NAME);
+        if (!Files.exists(path)) {
+            return "Coming Soon. No stored messages found.";
         }
         try {
             List<String> lines = Files.readAllLines(path);
