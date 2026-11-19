@@ -117,6 +117,16 @@ public class QuickChatTest {
     public void testSearchMessagesForRecipient() {
         String expected = "Where are you? You are late! I have asked you to be on time.\nOk, I am leaving without you.";
         assertEquals(expected, QuickChat.searchMessagesByRecipient("+27838884567"));
+
+     }
+
+    @Test
+    public void testDeleteMessageUsingHash() {
+        String msg2Hash = QuickChat.messageHashes[1];
+        assertEquals(
+                "Message: \"Where are you? You are late! I have asked you to be on time.\" successfully deleted.",
+                QuickChat.deleteMessageByHash(msg2Hash)
+        );   
     
     }
 
